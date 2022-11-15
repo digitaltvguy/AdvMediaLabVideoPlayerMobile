@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdvTech_Video_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-4H-ODE">
+                                <rect key="frame" x="-1732.5" y="-768.5" width="3840" height="2160"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="3840" id="Ac6-gD-0VJ"/>
+                                    <constraint firstAttribute="height" constant="2160" id="Xap-Jb-02s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCm-HG-bMJ">
+                                <rect key="frame" x="56" y="519" width="263" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Play Apple Reference Stream"/>
+                                <connections>
+                                    <action selector="butAppleRefStreamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sf-ce-Ynv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Custom URL Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DB3-rI-KTT">
+                                <rect key="frame" x="37.5" y="217" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="d1j-mm-sM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeacockArt-JohnKricfalusi_PNG_Alpha" translatesAutoresizingMaskIntoConstraints="NO" id="sAl-Mn-qvm">
+                                <rect key="frame" x="62.5" y="29" width="250" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="jq3-15-0r5"/>
+                                    <constraint firstAttribute="width" constant="250" id="pkr-AD-L2p"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GA-GX-SFW">
+                                <rect key="frame" x="41" y="565" width="293" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Play Dolby P5 Reference Stream"/>
+                                <connections>
+                                    <action selector="butDolbyRefStreamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e83-lp-lqZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r57-92-s6K">
+                                <rect key="frame" x="95" y="257" width="185" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Play Custom Stream"/>
+                                <connections>
+                                    <action selector="butCustomStreamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QcV-gl-2XC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AC-Yo-Nac">
+                                <rect key="frame" x="18" y="2.5" width="24" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="eC3-S9-uj5"/>
+                                    <constraint firstAttribute="height" constant="19" id="t09-nE-sTb"/>
+                                </constraints>
+                                <state key="normal" title="Settings" image="icons8-automatic-350_White_GearONLY_Alpha"/>
+                                <connections>
+                                    <action selector="butSettingsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaX-Um-Su7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyi-TS-LS4">
+                                <rect key="frame" x="125" y="342" width="125" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Hockey 2020"/>
+                                <connections>
+                                    <action selector="butUHDStreamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8S-KS-9a7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCB-u3-Bhu">
+                                <rect key="frame" x="125.5" y="434" width="124" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Tokyo HDR10"/>
+                                <connections>
+                                    <action selector="but720PStreamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2E-jG-dhC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xU-pl-iSm">
+                                <rect key="frame" x="119" y="388" width="137" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Tokyo DOVI P5"/>
+                                <connections>
+                                    <action selector="but1080PStreamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTY-0g-RNY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7AC-Yo-Nac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-157.5" id="2Cf-og-iLy"/>
+                            <constraint firstItem="DB3-rI-KTT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-99.5" id="2it-b8-4wR"/>
+                            <constraint firstItem="sAl-Mn-qvm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-213.5" id="2n7-K6-t6F"/>
+                            <constraint firstItem="7AC-Yo-Nac" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-321.5" id="DTt-WQ-x8I"/>
+                            <constraint firstItem="DCB-u3-Bhu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EHU-rW-eYl"/>
+                            <constraint firstItem="oyi-TS-LS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HF8-uq-6bV"/>
+                            <constraint firstItem="8GA-GX-SFW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250.5" id="LDh-Cm-qa3"/>
+                            <constraint firstItem="NCm-HG-bMJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mg1-11-L6h"/>
+                            <constraint firstItem="NCm-HG-bMJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="204.5" id="Q9J-Pe-O5l"/>
+                            <constraint firstItem="oyi-TS-LS4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="27.5" id="TdW-SH-Jvb"/>
+                            <constraint firstItem="rvv-4H-ODE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-22" id="VVk-uV-zeq"/>
+                            <constraint firstItem="rvv-4H-ODE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cv9-ZQ-Sl2"/>
+                            <constraint firstItem="8GA-GX-SFW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMq-bw-OXn"/>
+                            <constraint firstItem="r57-92-s6K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-57.5" id="kQf-L0-SLK"/>
+                            <constraint firstItem="DCB-u3-Bhu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="119.5" id="p9z-sp-Wc6"/>
+                            <constraint firstItem="8xU-pl-iSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qhM-qN-Frf"/>
+                            <constraint firstItem="sAl-Mn-qvm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rY3-CU-UKi"/>
+                            <constraint firstItem="r57-92-s6K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0f-YH-4p8"/>
+                            <constraint firstItem="DB3-rI-KTT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vVg-UP-iQx"/>
+                            <constraint firstItem="8xU-pl-iSm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="73.5" id="xxu-uk-ymS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="CustomURLTextf" destination="DB3-rI-KTT" id="Iic-wW-vmm"/>
+                        <outlet property="aButton" destination="oyi-TS-LS4" id="GvU-f7-Iya"/>
+                        <outlet property="bButton" destination="8xU-pl-iSm" id="poq-ql-vds"/>
+                        <outlet property="cButton" destination="DCB-u3-Bhu" id="BFQ-m9-evS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PeacockArt-JohnKricfalusi_PNG_Alpha" width="953" height="733"/>
+        <image name="icons8-automatic-350_White_GearONLY_Alpha" width="373" height="350"/>
+    </resources>
+</document>
