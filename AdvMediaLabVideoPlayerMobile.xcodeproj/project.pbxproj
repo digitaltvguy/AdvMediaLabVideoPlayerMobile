@@ -35,19 +35,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7E1ACF0A21D87563005C1AA4 /* AdvTech Video Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdvTech Video Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1ACF0A21D87563005C1AA4 /* AdvMediaLab Video Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdvMediaLab Video Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1ACF0D21D87563005C1AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E1ACF0F21D87563005C1AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E1ACF1221D87563005C1AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E1ACF1421D87564005C1AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E1ACF1721D87564005C1AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E1ACF1921D87564005C1AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdvMediaLabVideoPlayeriOS/Info.plist; sourceTree = SOURCE_ROOT; };
+		7E1ACF1921D87564005C1AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdvMediaLabVideoPlayerMobile/Info.plist; sourceTree = SOURCE_ROOT; };
 		7E1ACF1E21D87564005C1AA4 /* AdvTech Video PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdvTech Video PlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1ACF2221D87564005C1AA4 /* AdvMediaLabVideoPlayeriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvMediaLabVideoPlayeriOSTests.swift; sourceTree = "<group>"; };
-		7E1ACF2421D87564005C1AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdvMediaLabVideoPlayeriOSTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		7E1ACF2421D87564005C1AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdvMediaLabVideoPlayerMobileTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		7E1ACF2921D87564005C1AA4 /* AdvTech Video PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdvTech Video PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1ACF2D21D87564005C1AA4 /* AdvMediaLabVideoPlayeriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvMediaLabVideoPlayeriOSUITests.swift; sourceTree = "<group>"; };
-		7E1ACF2F21D87564005C1AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdvMediaLabVideoPlayeriOSUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		7E1ACF2F21D87564005C1AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdvMediaLabVideoPlayerMobileUITests/Info.plist; sourceTree = SOURCE_ROOT; };
 		7E33A42E21E0F5B70064BCE6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7EA81BD725168E4F00B2ABEF /* AdvTech Video Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AdvTech Video Player.entitlements"; sourceTree = "<group>"; };
 		7EE7690721D940C700BB35BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			children = (
 				7EA81BD725168E4F00B2ABEF /* AdvTech Video Player.entitlements */,
 				7E33A42E21E0F5B70064BCE6 /* Settings.bundle */,
-				7E1ACF0C21D87563005C1AA4 /* AdvMediaLabVideoPlayeriOS */,
+				7E1ACF0C21D87563005C1AA4 /* AdvMediaLabVideoPlayerMobile */,
 				7E1ACF2121D87564005C1AA4 /* AdvMediaLabVideoPlayerMobileTests */,
 				7E1ACF2C21D87564005C1AA4 /* AdvMediaLabVideoPlayerMobileUITests */,
 				7E1ACF0B21D87563005C1AA4 /* Products */,
@@ -93,14 +93,14 @@
 		7E1ACF0B21D87563005C1AA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E1ACF0A21D87563005C1AA4 /* AdvTech Video Player.app */,
+				7E1ACF0A21D87563005C1AA4 /* AdvMediaLab Video Player.app */,
 				7E1ACF1E21D87564005C1AA4 /* AdvTech Video PlayerTests.xctest */,
 				7E1ACF2921D87564005C1AA4 /* AdvTech Video PlayerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E1ACF0C21D87563005C1AA4 /* AdvMediaLabVideoPlayeriOS */ = {
+		7E1ACF0C21D87563005C1AA4 /* AdvMediaLabVideoPlayerMobile */ = {
 			isa = PBXGroup;
 			children = (
 				7E1ACF0D21D87563005C1AA4 /* AppDelegate.swift */,
@@ -110,7 +110,7 @@
 				7E1ACF1621D87564005C1AA4 /* LaunchScreen.storyboard */,
 				7E1ACF1921D87564005C1AA4 /* Info.plist */,
 			);
-			path = AdvMediaLabVideoPlayeriOS;
+			path = AdvMediaLabVideoPlayerMobile;
 			sourceTree = "<group>";
 		};
 		7E1ACF2121D87564005C1AA4 /* AdvMediaLabVideoPlayerMobileTests */ = {
@@ -134,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E1ACF0921D87563005C1AA4 /* AdvTech Video Player */ = {
+		7E1ACF0921D87563005C1AA4 /* AdvMediaLab Video Player */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E1ACF3221D87564005C1AA4 /* Build configuration list for PBXNativeTarget "AdvTech Video Player" */;
+			buildConfigurationList = 7E1ACF3221D87564005C1AA4 /* Build configuration list for PBXNativeTarget "AdvMediaLab Video Player" */;
 			buildPhases = (
 				7E1ACF0621D87563005C1AA4 /* Sources */,
 				7E1ACF0721D87563005C1AA4 /* Frameworks */,
@@ -146,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = "AdvTech Video Player";
+			name = "AdvMediaLab Video Player";
 			productName = iOS_HLS_fmp_AVF;
-			productReference = 7E1ACF0A21D87563005C1AA4 /* AdvTech Video Player.app */;
+			productReference = 7E1ACF0A21D87563005C1AA4 /* AdvMediaLab Video Player.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7E1ACF1D21D87564005C1AA4 /* AdvTech Video PlayerTests */ = {
@@ -226,7 +226,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E1ACF0921D87563005C1AA4 /* AdvTech Video Player */,
+				7E1ACF0921D87563005C1AA4 /* AdvMediaLab Video Player */,
 				7E1ACF1D21D87564005C1AA4 /* AdvTech Video PlayerTests */,
 				7E1ACF2821D87564005C1AA4 /* AdvTech Video PlayerUITests */,
 			);
@@ -292,12 +292,12 @@
 /* Begin PBXTargetDependency section */
 		7E1ACF2021D87564005C1AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7E1ACF0921D87563005C1AA4 /* AdvTech Video Player */;
+			target = 7E1ACF0921D87563005C1AA4 /* AdvMediaLab Video Player */;
 			targetProxy = 7E1ACF1F21D87564005C1AA4 /* PBXContainerItemProxy */;
 		};
 		7E1ACF2B21D87564005C1AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7E1ACF0921D87563005C1AA4 /* AdvTech Video Player */;
+			target = 7E1ACF0921D87563005C1AA4 /* AdvMediaLab Video Player */;
 			targetProxy = 7E1ACF2A21D87564005C1AA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -447,9 +447,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "AdvTech Video Player.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = 4422LYPTWW;
-				INFOPLIST_FILE = AdvMediaLabVideoPlayeriOS/Info.plist;
+				INFOPLIST_FILE = AdvMediaLabVideoPlayerMobile/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,9 +471,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "AdvTech Video Player.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = 4422LYPTWW;
-				INFOPLIST_FILE = AdvMediaLabVideoPlayeriOS/Info.plist;
+				INFOPLIST_FILE = AdvMediaLabVideoPlayerMobile/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E1ACF3221D87564005C1AA4 /* Build configuration list for PBXNativeTarget "AdvTech Video Player" */ = {
+		7E1ACF3221D87564005C1AA4 /* Build configuration list for PBXNativeTarget "AdvMediaLab Video Player" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E1ACF3321D87564005C1AA4 /* Debug */,
