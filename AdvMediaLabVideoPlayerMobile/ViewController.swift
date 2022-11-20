@@ -53,6 +53,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var bButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
+    @IBOutlet weak var dButton: UIButton!
  
     
     @objc func appMovedToForegroundUpdateButtonLabels() {
@@ -81,15 +82,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
         let cButtonLabelText = userDefaults.string(forKey: "c_button_label")
         cButton.setTitle(cButtonLabelText, for: .normal)
         
+        let dButtonLabelText = userDefaults.string(forKey: "d_button_label")
+        dButton.setTitle(dButtonLabelText, for: .normal)
+        
         
     }
     
     
-    @IBAction func butUHDStreamTapped(_ sender: Any) {
+    @IBAction func butAStreamTapped(_ sender: Any) {
     
         let userDefaults = UserDefaults.standard
         userDefaults.synchronize()
-        let streamURL = userDefaults.string(forKey: "4k_url")
+        let streamURL = userDefaults.string(forKey: "a_url")
         
         guard let VideoURL = URL(string: streamURL!) else {
             debugPrint ("URL not found")
@@ -106,11 +110,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
     }
     
     
-    @IBAction func but1080PStreamTapped(_ sender: Any) {
+    @IBAction func butBStreamTapped(_ sender: Any) {
         
         let userDefaults = UserDefaults.standard
         userDefaults.synchronize()
-        let streamURL = userDefaults.string(forKey: "1080p_url")
+        let streamURL = userDefaults.string(forKey: "b_url")
         
         guard let VideoURL = URL(string: streamURL!) else {
             debugPrint ("URL not found")
@@ -126,11 +130,32 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
     }
     
     
-    @IBAction func but720PStreamTapped(_ sender: Any) {
+    @IBAction func butCStreamTapped(_ sender: Any) {
         
         let userDefaults = UserDefaults.standard
         userDefaults.synchronize()
-        let streamURL = userDefaults.string(forKey: "720p_url")
+        let streamURL = userDefaults.string(forKey: "c_url")
+        
+        guard let VideoURL = URL(string: streamURL!) else {
+            debugPrint ("URL not found")
+            return
+        }
+        
+        let player = AVPlayer(url: VideoURL)
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true){
+            player.play()
+        }
+            hideKeyboard()
+    }
+    
+    
+    @IBAction func butDStreamTapped(_ sender: Any) {
+        
+        let userDefaults = UserDefaults.standard
+        userDefaults.synchronize()
+        let streamURL = userDefaults.string(forKey: "d_url")
         
         guard let VideoURL = URL(string: streamURL!) else {
             debugPrint ("URL not found")

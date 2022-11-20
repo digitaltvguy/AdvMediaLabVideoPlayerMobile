@@ -16,29 +16,11 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Button A URL: </string>
-			<key>Key</key>
-			<string>4k_url</string>
-			<key>DefaultValue</key>
-			<string>https://xxx</string>
-			<key>IsSecure</key>
-			<false/>
-			<key>KeyboardType</key>
-			<string>Alphabet</string>
-			<key>AutocapitalizationType</key>
-			<string>None</string>
-			<key>AutocorrectionType</key>
-			<string>No</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
-			<key>Title</key>
 			<string>Button A Label: </string>
 			<key>Key</key>
 			<string>a_button_label</string>
 			<key>DefaultValue</key>
-			<string>URL A</string>
+			<string>BUTTON A URL</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>KeyboardType</key>
@@ -52,9 +34,9 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Button B URL: </string>
+			<string>Button A URL: </string>
 			<key>Key</key>
-			<string>1080p_url</string>
+			<string>a_url</string>
 			<key>DefaultValue</key>
 			<string>https://xxx</string>
 			<key>IsSecure</key>
@@ -74,7 +56,7 @@
 			<key>Key</key>
 			<string>b_button_label</string>
 			<key>DefaultValue</key>
-			<string>URL B</string>
+			<string>BUTTON B URL</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>KeyboardType</key>
@@ -88,9 +70,9 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Button C URL: </string>
+			<string>Button B URL: </string>
 			<key>Key</key>
-			<string>720p_url</string>
+			<string>b_url</string>
 			<key>DefaultValue</key>
 			<string>https://xxx</string>
 			<key>IsSecure</key>
@@ -110,7 +92,99 @@
 			<key>Key</key>
 			<string>c_button_label</string>
 			<key>DefaultValue</key>
-			<string>URL B</string>
+			<string>BUTTON C URL</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>New item</key>
+			<dict>
+				<key>Type</key>
+				<string>PSTextFieldSpecifier</string>
+				<key>Title</key>
+				<string>Button C URL: </string>
+				<key>Key</key>
+				<string>720p_url</string>
+				<key>DefaultValue</key>
+				<string>https://xxx</string>
+				<key>IsSecure</key>
+				<false/>
+				<key>KeyboardType</key>
+				<string>Alphabet</string>
+				<key>AutocapitalizationType</key>
+				<string>None</string>
+				<key>AutocorrectionType</key>
+				<string>No</string>
+			</dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Button C URL: </string>
+			<key>Key</key>
+			<string>c_url</string>
+			<key>DefaultValue</key>
+			<string>https://xxx</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Button D Label: </string>
+			<key>Key</key>
+			<string>d_button_label</string>
+			<key>DefaultValue</key>
+			<string>BUTTON D URL</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>New item</key>
+			<dict>
+				<key>Type</key>
+				<string>PSTextFieldSpecifier</string>
+				<key>Title</key>
+				<string>Button C URL: </string>
+				<key>Key</key>
+				<string>720p_url</string>
+				<key>DefaultValue</key>
+				<string>https://xxx</string>
+				<key>IsSecure</key>
+				<false/>
+				<key>KeyboardType</key>
+				<string>Alphabet</string>
+				<key>AutocapitalizationType</key>
+				<string>None</string>
+				<key>AutocorrectionType</key>
+				<string>No</string>
+			</dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Button D URL: </string>
+			<key>Key</key>
+			<string>d_url</string>
+			<key>DefaultValue</key>
+			<string>https://xxx</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>KeyboardType</key>
