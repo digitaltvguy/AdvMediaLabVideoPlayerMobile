@@ -195,6 +195,43 @@
 			<string>No</string>
 		</dict>
 		<dict>
+			<key>New item</key>
+			<dict>
+				<key>Type</key>
+				<string>PSTextFieldSpecifier</string>
+				<key>Title</key>
+				<string>Button C URL: </string>
+				<key>Key</key>
+				<string>720p_url</string>
+				<key>DefaultValue</key>
+				<string>https://xxx</string>
+				<key>IsSecure</key>
+				<false/>
+				<key>KeyboardType</key>
+				<string>Alphabet</string>
+				<key>AutocapitalizationType</key>
+				<string>None</string>
+				<key>AutocorrectionType</key>
+				<string>No</string>
+			</dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Playlist JSON URL: </string>
+			<key>Key</key>
+			<string>JSON_url</string>
+			<key>DefaultValue</key>
+			<string>https://xxx</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>

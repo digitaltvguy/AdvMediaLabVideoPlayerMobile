@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  iOS_HLS_fmp_AVF
 //
-//  Created by Chris Seeger on 12/29/18.
-//  Copyright © 2018 NBCUniversal. All rights reserved.
+//  Updated by Chris Seeger on 11-21-22
+//  Copyright © 2022 NBCUniversal. All rights reserved.
 //
 
 import UIKit

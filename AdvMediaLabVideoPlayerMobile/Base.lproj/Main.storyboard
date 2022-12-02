@@ -111,6 +111,11 @@
                                     <action selector="butSettingsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaX-Um-Su7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaI-1x-cR4">
+                                <rect key="frame" x="171" y="-0.5" width="33" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="J"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +123,7 @@
                             <constraint firstItem="oyi-TS-LS4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="15.5" id="0MN-aB-ZVH"/>
                             <constraint firstItem="NCm-HG-bMJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="219.5" id="1h0-yc-Ga5"/>
                             <constraint firstItem="DB3-rI-KTT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-99.5" id="2it-b8-4wR"/>
+                            <constraint firstItem="PaI-1x-cR4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7iG-ZR-Iar"/>
                             <constraint firstItem="DCB-u3-Bhu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7mw-Zk-n1F"/>
                             <constraint firstItem="7AC-Yo-Nac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-159.5" id="H0a-eq-OPP"/>
                             <constraint firstItem="NCm-HG-bMJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MEW-uh-F5j"/>
@@ -128,6 +134,7 @@
                             <constraint firstItem="IHa-OY-0uI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zt2-vB-pl7"/>
                             <constraint firstItem="8xU-pl-iSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5X-Y6-B4h"/>
                             <constraint firstItem="7AC-Yo-Nac" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-314" id="cKK-KH-T6L"/>
+                            <constraint firstItem="PaI-1x-cR4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-316.5" id="cf1-0B-6HY"/>
                             <constraint firstItem="r57-92-s6K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-57.5" id="kQf-L0-SLK"/>
                             <constraint firstItem="IHa-OY-0uI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="151.5" id="lKI-xt-9dv"/>
                             <constraint firstItem="61M-hX-vaA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="150.5" id="nHo-57-HAa"/>
@@ -143,6 +150,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CustomURLTextf" destination="DB3-rI-KTT" id="Iic-wW-vmm"/>
+                        <outlet property="JSONButton" destination="PaI-1x-cR4" id="Lv5-yc-pe5"/>
                         <outlet property="aButton" destination="oyi-TS-LS4" id="GvU-f7-Iya"/>
                         <outlet property="bButton" destination="8xU-pl-iSm" id="poq-ql-vds"/>
                         <outlet property="cButton" destination="DCB-u3-Bhu" id="BFQ-m9-evS"/>
@@ -161,16 +169,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Editable text field" translatesAutoresizingMaskIntoConstraints="NO" id="apo-nc-AH1">
-                                <rect key="frame" x="16" y="12" width="350" height="578"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-HO-tQQ">
-                                <rect key="frame" x="121" y="598" width="133" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-HO-tQQ">
+                                <rect key="frame" x="9" y="6" width="133" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Wbq-cA-yBx"/>
                                     <constraint firstAttribute="width" constant="133" id="fYd-Nx-16O"/>
@@ -181,19 +181,51 @@
                                     <action selector="close" destination="oIP-M0-jZ7" eventType="touchUpInside" id="9La-1Z-agC"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eVb-Xn-QOC">
+                                <rect key="frame" x="9" y="110" width="358" height="517"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6L6-Oo-s6J">
+                                <rect key="frame" x="9" y="68" width="358" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3A-GY-Nya">
+                                <rect key="frame" x="288" y="6" width="84" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Append"/>
+                                <connections>
+                                    <action selector="appendTextButton:" destination="oIP-M0-jZ7" eventType="touchUpInside" id="ne0-TK-znn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYG-ce-AX7">
+                                <rect key="frame" x="229" y="6" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Set"/>
+                                <connections>
+                                    <action selector="setTextButton:" destination="oIP-M0-jZ7" eventType="touchUpInside" id="HNY-Mf-DwE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cfr-p2-0CG"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cfr-p2-0CG" firstAttribute="bottom" secondItem="apo-nc-AH1" secondAttribute="bottom" constant="57" id="B70-Bt-W0y"/>
-                            <constraint firstItem="apo-nc-AH1" firstAttribute="centerY" secondItem="OtF-Rx-uhq" secondAttribute="centerY" constant="-22.5" id="NjH-h5-RLg"/>
-                            <constraint firstItem="apo-nc-AH1" firstAttribute="leading" secondItem="cfr-p2-0CG" secondAttribute="leading" constant="16" id="bh5-k7-7hc"/>
                             <constraint firstItem="lJj-HO-tQQ" firstAttribute="centerX" secondItem="OtF-Rx-uhq" secondAttribute="centerX" id="gTi-pz-2NR"/>
-                            <constraint firstItem="cfr-p2-0CG" firstAttribute="trailing" secondItem="apo-nc-AH1" secondAttribute="trailing" constant="9" id="hat-2I-Lcy"/>
-                            <constraint firstItem="apo-nc-AH1" firstAttribute="centerX" secondItem="OtF-Rx-uhq" secondAttribute="centerX" constant="3.5" id="lx5-3F-Adg"/>
                             <constraint firstItem="lJj-HO-tQQ" firstAttribute="centerY" secondItem="OtF-Rx-uhq" secondAttribute="centerY" constant="292" id="qlS-kn-arU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="6L6-Oo-s6J" id="0wu-97-VBY"/>
+                        <outlet property="textView" destination="eVb-Xn-QOC" id="GPs-vE-jg4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hm-iU-AvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

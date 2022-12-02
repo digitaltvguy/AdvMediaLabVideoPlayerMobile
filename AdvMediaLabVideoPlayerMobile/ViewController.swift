@@ -10,7 +10,6 @@ import UIKit
 import AVKit
 
 
-
 //Added Delegates for AVPlayer and UITextField along with normal UIViewController
 class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelegate {
 
@@ -54,6 +53,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
     @IBOutlet weak var bButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
     @IBOutlet weak var dButton: UIButton!
+    @IBOutlet weak var JSONButton: UIButton!
  
     
     @objc func appMovedToForegroundUpdateButtonLabels() {
